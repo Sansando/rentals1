@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DriveNow</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="animated-header">DriveNow</header>
+    
+    <div class="container" id="authContainer">
+        <h2>Welcome to Our Bike Rental Service</h2>
+        <p>Find and rent the best bikes and cars at affordable prices.</p>
+        <div class="auth-buttons">
+            <button onclick="showForm('login')">Login</button>
+            <button onclick="showForm('signup')">Sign Up</button>
+        </div>
+        
+        <div id="loginForm" class="form-container">
+            <h3>Login</h3>
+            <input type="text" placeholder="Username" id="loginUsername">
+            <input type="password" placeholder="Password" id="loginPassword">
+            <button onclick="submitLogin()">Login</button>
+        </div>
+
+        <div id="signupForm" class="form-container">
+            <h3>Sign Up</h3>
+            <input type="text" placeholder="Username" id="signupUsername">
+            <input type="email" placeholder="Email" id="signupEmail">
+            <input type="password" placeholder="Password" id="signupPassword">
+            <button onclick="submitSignup()">Sign Up</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
