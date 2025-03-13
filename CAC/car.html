@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Rental</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Background Styling */
+        body {
+            background: url('https://wallpaperaccess.com/full/94358.jpg') no-repeat center center fixed;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            color: white;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header Styling */
+        .animated-header {
+            font-size: 2.5em;
+            font-weight: bold;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            display: inline-block;
+            border-radius: 15px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        /* Container Styling */
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.85);
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3);
+            animation: fadeInUp 1.5s ease-in-out;
+        }
+
+        /* Scrollable Area */
+        .car-list {
+            max-height: 400px;
+            overflow-y: auto;
+            padding: 10px;
+            border-radius: 10px;
+            scrollbar-width: thin;
+            scrollbar-color: #ff5722 #333;
+        }
+
+        /* Car Option Cards */
+        .option {
+            background: rgba(255, 255, 255, 0.95);
+            color: black;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .option:hover {
+            transform: scale(1.03);
+            box-shadow: 0 6px 12px rgba(255, 87, 34, 0.4);
+        }
+
+        .option img {
+            width: 130px;
+            height: auto;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .option img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 20px;
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header class="animated-header">Car Rental</header>
+
+    <div class="container">
+        <h2>Available Cars</h2>
+
+        <div class="car-list">
+            <div class="option">
+                <img src="https://tse2.mm.bing.net/th?id=OIP.BdDpEyf8ECfrG5jHgvRwKgHaFP&pid=Api&P=0&h=180" alt="Toyota Fortuner">
+                <p>Toyota Fortuner - ₹5000/day</p>
+                <button>Rent Now</button>
+            </div>
+            
+            <div class="option">
+                <img src="https://tse4.mm.bing.net/th?id=OIP.b6Zh3YkFpgPJs_551kLpTwHaE8&pid=Api&P=0&h=180" alt="Mercedes-Benz C-Class">
+                <p>Mercedes-Benz C-Class - ₹8000/day</p>
+                <button>Rent Now</button>
+            </div>
+
+            <div class="option">
+                <img src="https://tse3.mm.bing.net/th?id=OIP.jN7e8te0lQo-Bi9kp1sDOgHaEK&pid=Api&P=0&h=180" alt="Suzuki Swift">
+                <p> Suzuki Swift - ₹1200/day</p>
+                <button>Rent Now</button>
+            </div>
+
+            <div class="option">
+                <img src="https://tse2.mm.bing.net/th?id=OIP.7CSdyzJysOWz8nMilYhuRgHaEh&pid=Api&P=0&h=180" alt="Suzuki Swift - DesireSuzuki Swift - Desire">
+                <p>Suzuki Swift - Desire - ₹1200/day</p>
+                <button>Rent Now</button>
+            </div>
+
+            <div class="option">
+                <img src="https://tse4.mm.bing.net/th?id=OIP.es1AxuBqZ_040dB78Coh4wHaE6&pid=Api&P=0&h=180" alt="Mahindra - Thar">
+                <p>Mahindra - Thar - ₹2500/day</p>
+                <button>Rent Now</button>
+            </div>
+
+            <div class="option">
+                <img src="https://tse3.mm.bing.net/th?id=OIP.TfI2czkDLNvYsVrpwf6StQHaE6&pid=Api&P=0&h=180" alt="Mahindra - TUV 300">
+                <p>Mahindra - TUV 300 - ₹2500/day</p>
+                <button>Rent Now</button>
+            </div>
+
+            <div class="option">
+                <img src="https://tse4.mm.bing.net/th?id=OIP.YApaCil0emUpMVZCy9urwQHaE6&pid=Api&P=0&h=180" alt="Renault -kiger">
+                <p>Renault -kiger - ₹2000/day</p>
+                <button>Rent Now</button>
+            </div>
+
+            <div class="option">
+                <img src="https://tse4.mm.bing.net/th?id=OIP.MjrxxHa5qWUjHqNwqsYX5AHaE6&pid=Api&P=0&h=180" alt="Mercedes-Benz C-Class">
+                <p>Mahindra - Scorpio - ₹2200/day</p>
+                <button>Rent Now</button>
+            </div>
+
+        </div>
+        
+        <button onclick="window.location.href='index.html'">Back to Home</button>
+    </div>
+
+    <footer>&copy; 2025 Car Rental Platform</footer>
+</body>
+</html>
